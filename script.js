@@ -10,6 +10,7 @@ const getSum = () => {
 		total+=Number(el.innerText)
 	})
 	const newRow = document.createElement('tr')
+	newRow.setAttribute("data-ns-test", "grandTotal")
 	newRow.innerText = total
 	newRow.id = "ans"
 	const table = document.querySelectorAll('table')[0]
